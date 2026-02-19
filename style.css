@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: #333;
+}
+
+/* CAPA */
+.capa {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    padding: 40px;
+}
+
+/* SEÇÕES */
+.secao {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover nas seções */
+.secao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Animação ao carregar */
+.animar {
+    animation: slideUp 1s ease forwards;
+}
+
+/* Títulos */
+h2 {
+    color: #1e3a8a;
+}
+
+/* Imagem */
+.foto-perfil {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Lista */
+ul li {
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #2563eb;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid #2563eb;
+    box-shadow: 0px 0px 5px #2563eb;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #1e3a8a;
+    transform: scale(1.05);
+}
+
+/* Mensagem PHP */
+.mensagem {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
